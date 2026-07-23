@@ -1,0 +1,92 @@
+aid: navy-federal-credit-union
+name: Navy Federal Credit Union
+review:
+  question: Does Navy Federal Credit Union expose a real first-party public developer API, and what is its US open-finance posture (developer portal, downloadable specs, FDX/1033, aggregator access, auth model)?
+  answer: true
+  date: '2026-07-23'
+  reviewer: API Evangelist
+findings:
+  summary: |
+    Navy Federal Credit Union operates a genuine, live first-party developer
+    program — the Navy Federal API Exchange at https://developer.navyfederal.org
+    (HTTP 200) — branded as an "Open Banking API Catalog." The publicly viewable
+    catalog page enumerates eight consumer-permissioned data-access API products:
+    Account Details, Account Holders, Account Statements, Account Transactions,
+    API Management (OAuth/client registration), Customer Accounts, Customer
+    Details, and Gateway Connectivity (an mTLS connection test). This is a real
+    API surface, but it is PARTNER-GATED: consumption requires creating an
+    account, signing a Data Access Agreement, and completing onboarding before
+    reaching production. No OpenAPI/Swagger or per-endpoint reference is publicly
+    downloadable pre-login, so no machine-readable spec could be harvested.
+    Authentication combines OAuth member-consent authorization with mutual-TLS
+    (mTLS) and IP whitelisting. FDX (Financial Data Exchange) membership and a
+    CFPB Section 1033 posture are NOT explicitly named on the public portal,
+    though the program is a standardized, tokenized, consumer-permissioned data-
+    sharing model in the open-banking spirit. Members can additionally share
+    permissioned data through aggregators — Plaid, Envestnet | Yodlee (a 2021
+    Data Access Agreement), and Flinks.
+  institutionType: Federally chartered credit union (NCUA-regulated), member-owned not-for-profit cooperative; largest credit union in the world.
+  developerPortal:
+    url: https://developer.navyfederal.org/
+    status: 200
+    confirmed: true
+    name: Navy Federal API Exchange
+    gated: true
+    note: Portal homepage and Open Banking API Catalog are publicly viewable; per-API detail pages, document library specs, and production access are login-gated behind registration + a signed Data Access Agreement.
+  apiProducts:
+    - Account Details
+    - Account Holders
+    - Account Statements
+    - Account Transactions
+    - API Management
+    - Customer Accounts
+    - Customer Details
+    - Gateway Connectivity
+  authModel:
+    - protocol: OAuth
+      note: Member-consent authorization ("consent experience") for third-party access to permissioned account/customer data.
+    - protocol: mTLS
+      note: Mutual-TLS with IP whitelisting for platform connectivity; validated via the Gateway Connectivity test API.
+  specProvenance:
+    openapiHarvested: false
+    note: No OpenAPI/Swagger publicly downloadable; API reference and specifications sit behind portal login and a Data Access Agreement. openapi/ left empty by design (honest, no fabrication).
+  openFinancePosture:
+    fdxParticipant: unknown
+    fdxNote: FDX membership is not stated on the public developer portal; the catalog is a standardized, tokenized consumer-permissioned data-sharing program aligned with open-banking norms but not explicitly branded FDX.
+    cfpb1033: not-stated
+    cfpb1033Note: No explicit CFPB Section 1033 / Personal Financial Data Rights statement found on the public developer portal at review time.
+    aggregatorAccess:
+      - Plaid
+      - Envestnet | Yodlee (2021 Data Access Agreement)
+      - Flinks
+  transports:
+    - protocol: REST
+      scheme: https
+      documented: true
+      note: HTTPS REST data-access APIs behind the API Exchange gateway; base URL not publicly documented pre-login.
+    - protocol: mTLS
+      scheme: https
+      documented: true
+      note: Mutual-TLS with whitelisting required for platform connectivity (Gateway Connectivity API).
+sources:
+  - url: https://developer.navyfederal.org/
+    type: DeveloperPortal
+    status: 200
+    note: Navy Federal API Exchange homepage; four-stage onboarding (Sign Up, Data Access Agreement, Testing & Development, Production Readiness).
+  - url: https://developer.navyfederal.org/open-banking-api-catalog.html
+    type: APIReference
+    status: 200
+    note: Publicly viewable Open Banking API Catalog listing the eight data-access API products; mentions OAuth consent and mTLS.
+  - url: https://developer.navyfederal.org/document-library.html
+    type: Documentation
+    status: 200
+    note: Document Library (specifications/guides behind onboarding).
+  - url: https://developer.navyfederal.org/terms-and-conditions.html
+    type: TermsOfService
+    status: 200
+  - url: https://www.openbankingtracker.com/provider/navy-federal-credit-union
+    type: Reference
+    note: Confirms aggregator-mediated access (Plaid, Flinks, BankSync) and notes no PSD2 obligation for the US institution.
+  - url: https://www.prnewswire.com/news-releases/envestnet--yodlee-partners-with-navy-federal-credit-union-on-data-access-agreement-for-improved-consumer-access-to-financial-data-301387690.html
+    type: Reference
+    note: 2021 Envestnet | Yodlee Data Access Agreement enabling token-based member data sharing to 1,400+ apps.

@@ -1,0 +1,177 @@
+aid: navy-federal-credit-union
+url: https://raw.githubusercontent.com/api-evangelist/navy-federal-credit-union/refs/heads/main/apis.yml
+name: Navy Federal Credit Union
+kind: company
+description: >-
+  Navy Federal Credit Union is a federally chartered credit union headquartered
+  in Vienna, Virginia, and the largest credit union in the world by both assets
+  and membership, serving more than 14 million members across the armed forces,
+  Department of Defense, veterans, and their families. As a not-for-profit,
+  member-owned financial cooperative regulated by the National Credit Union
+  Administration (NCUA), it offers deposit accounts, credit cards, auto and
+  mortgage lending, and investment services. On the open-finance front, Navy
+  Federal operates a genuine first-party developer program — the Navy Federal
+  API Exchange at developer.navyfederal.org — that publishes a consumer-
+  permissioned, open-banking-style API catalog of eight data-access products
+  (account details, holders, statements, transactions, customer accounts,
+  customer details, plus OAuth/API-management and an mTLS gateway-connectivity
+  test). Access is partner-gated behind registration and a signed Data Access
+  Agreement, secured with OAuth member consent and mutual-TLS whitelisting;
+  no OpenAPI/Swagger is publicly downloadable pre-login. Navy Federal also
+  exposes member-permissioned data through aggregators (Plaid, Envestnet |
+  Yodlee via a 2021 data access agreement, Flinks) rather than solely direct
+  first-party integration.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Financial Services
+- Banking
+- United States
+- Credit Union
+- Open Finance
+- Open Banking
+- Data Aggregation
+- Payments
+created: '2026-07-23'
+modified: '2026-07-23'
+specificationVersion: '0.19'
+apis:
+- aid: navy-federal-credit-union:account-details
+  name: Account Details API
+  description: >-
+    Details and summary information for member accounts, including name, status,
+    activity dates, balances, and more. Part of Navy Federal's consumer-
+    permissioned Open Banking API Catalog; access is gated behind registration,
+    a signed Data Access Agreement, OAuth member consent, and mTLS.
+  humanURL: https://developer.navyfederal.org/open-banking-api-catalog.html
+  tags:
+  - Accounts
+  - Balances
+  properties:
+  - type: Documentation
+    url: https://developer.navyfederal.org/document-library.html
+  - type: APIReference
+    url: https://developer.navyfederal.org/open-banking-api-catalog.html
+- aid: navy-federal-credit-union:account-holders
+  name: Account Holders API
+  description: >-
+    Information on account ownership and member relationships for consented
+    member accounts. Part of Navy Federal's consumer-permissioned Open Banking
+    API Catalog.
+  humanURL: https://developer.navyfederal.org/open-banking-api-catalog.html
+  tags:
+  - Accounts
+  - Identity
+  properties:
+  - type: Documentation
+    url: https://developer.navyfederal.org/document-library.html
+  - type: APIReference
+    url: https://developer.navyfederal.org/open-banking-api-catalog.html
+- aid: navy-federal-credit-union:account-statements
+  name: Account Statements API
+  description: >-
+    Statements for accounts over a given period, including statement names and
+    images with details. Part of Navy Federal's consumer-permissioned Open
+    Banking API Catalog.
+  humanURL: https://developer.navyfederal.org/open-banking-api-catalog.html
+  tags:
+  - Accounts
+  - Statements
+  properties:
+  - type: Documentation
+    url: https://developer.navyfederal.org/document-library.html
+  - type: APIReference
+    url: https://developer.navyfederal.org/open-banking-api-catalog.html
+- aid: navy-federal-credit-union:account-transactions
+  name: Account Transactions API
+  description: >-
+    Transactions for accounts over a given period, including amounts,
+    description, running balance, status, and more. Part of Navy Federal's
+    consumer-permissioned Open Banking API Catalog.
+  humanURL: https://developer.navyfederal.org/open-banking-api-catalog.html
+  tags:
+  - Accounts
+  - Transactions
+  properties:
+  - type: Documentation
+    url: https://developer.navyfederal.org/document-library.html
+  - type: APIReference
+    url: https://developer.navyfederal.org/open-banking-api-catalog.html
+- aid: navy-federal-credit-union:api-management
+  name: API Management API
+  description: >-
+    Client registration and OAuth authentication management used to onboard
+    third parties and obtain member consent tokens for the Open Banking API
+    Catalog.
+  humanURL: https://developer.navyfederal.org/open-banking-api-catalog.html
+  tags:
+  - OAuth
+  - Authentication
+  properties:
+  - type: Documentation
+    url: https://developer.navyfederal.org/document-library.html
+  - type: APIReference
+    url: https://developer.navyfederal.org/open-banking-api-catalog.html
+- aid: navy-federal-credit-union:customer-accounts
+  name: Customer Accounts API
+  description: >-
+    Listing of consented member accounts with basic details. Part of Navy
+    Federal's consumer-permissioned Open Banking API Catalog.
+  humanURL: https://developer.navyfederal.org/open-banking-api-catalog.html
+  tags:
+  - Accounts
+  - Customers
+  properties:
+  - type: Documentation
+    url: https://developer.navyfederal.org/document-library.html
+  - type: APIReference
+    url: https://developer.navyfederal.org/open-banking-api-catalog.html
+- aid: navy-federal-credit-union:customer-details
+  name: Customer Details API
+  description: >-
+    Member information independent of accounts, including name, address, date
+    of birth, IDs, and other personal information. Part of Navy Federal's
+    consumer-permissioned Open Banking API Catalog.
+  humanURL: https://developer.navyfederal.org/open-banking-api-catalog.html
+  tags:
+  - Customers
+  - Identity
+  properties:
+  - type: Documentation
+    url: https://developer.navyfederal.org/document-library.html
+  - type: APIReference
+    url: https://developer.navyfederal.org/open-banking-api-catalog.html
+- aid: navy-federal-credit-union:gateway-connectivity
+  name: Gateway Connectivity API
+  description: >-
+    Connection test to the API platform providing a basic message response,
+    used to prove out a working request over mTLS with whitelisting. Part of
+    Navy Federal's Open Banking API Catalog.
+  humanURL: https://developer.navyfederal.org/open-banking-api-catalog.html
+  tags:
+  - Connectivity
+  - mTLS
+  properties:
+  - type: Documentation
+    url: https://developer.navyfederal.org/document-library.html
+  - type: APIReference
+    url: https://developer.navyfederal.org/open-banking-api-catalog.html
+common:
+- type: Website
+  url: https://www.navyfederal.org/
+- type: DeveloperPortal
+  url: https://developer.navyfederal.org/
+- type: Documentation
+  url: https://developer.navyfederal.org/document-library.html
+- type: SignUp
+  url: https://developer.navyfederal.org/register.html
+- type: Support
+  url: https://developer.navyfederal.org/support.html
+- type: TermsOfService
+  url: https://developer.navyfederal.org/terms-and-conditions.html
+- type: LinkedIn
+  url: https://www.linkedin.com/company/navy-federal-credit-union
+- type: Blog
+  url: https://www.navyfederal.org/makingcents.html
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
