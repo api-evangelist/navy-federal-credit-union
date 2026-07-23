@@ -1,0 +1,30 @@
+generated: '2026-07-23'
+method: searched
+source: live probes of /.well-known/ on Navy Federal hosts
+hosts:
+- host: https://www.navyfederal.org
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: navy-federal-credit-union-security.txt
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+- host: https://developer.navyfederal.org
+  documents:
+  # Developer portal is a static (AEM) site; /.well-known/* 301-redirect to
+  # an appended .html path that 404s — no machine-readable discovery surface.
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 301
+    note: redirects to /.well-known/openid-configuration.html which 404s (static site)
+  - path: /.well-known/oauth-authorization-server
+    status: 301
+    note: redirects to .html which 404s (static site)
+  - path: /.well-known/api-catalog
+    status: 301
+    note: redirects to .html which 404s (static site)

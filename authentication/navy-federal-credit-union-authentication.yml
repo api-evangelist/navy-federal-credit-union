@@ -1,0 +1,32 @@
+generated: '2026-07-23'
+method: searched
+source: https://developer.navyfederal.org/open-banking-api-catalog.html
+docs: https://developer.navyfederal.org/document-library.html
+note: >-
+  Navy Federal's Open Banking API Catalog is partner-gated and publishes no
+  downloadable OpenAPI/Swagger pre-login, so this profile is derived from the
+  documented access model on the developer portal rather than machine-read from
+  a securitySchemes block. Access requires third-party registration plus a
+  signed Data Access Agreement before credentials are issued.
+summary:
+  types: [oauth2, mutualTLS]
+  api_key_in: []
+  oauth2_flows: [authorizationCode]
+  consumer_permissioned: true
+schemes:
+- name: OAuthMemberConsent
+  type: oauth2
+  documented_flow: authorizationCode
+  description: >-
+    Member-consented OAuth authorization: the member authenticates and grants a
+    third party consent, producing an access token scoped to the consented
+    accounts/data products in the Open Banking API Catalog. Client registration
+    and token management are handled through the API Management API.
+  sources: [developer portal documentation]
+- name: MutualTLS
+  type: mutualTLS
+  description: >-
+    Gateway connectivity requires mutual TLS with client-certificate
+    whitelisting; the Gateway Connectivity API is provided to prove out a
+    working mTLS request before consuming data-access products.
+  sources: [developer portal documentation]

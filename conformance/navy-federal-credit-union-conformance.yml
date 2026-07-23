@@ -1,0 +1,30 @@
+generated: '2026-07-23'
+method: searched
+source: https://developer.navyfederal.org/open-banking-api-catalog.html
+note: >-
+  Asserted from the documented access model of Navy Federal's Open Banking API
+  Catalog. No public OpenAPI is available pre-login, so spec-level conformance
+  (RFC 9457, pagination, etc.) could not be machine-verified; only the
+  security/authorization posture documented on the developer portal is asserted.
+standards:
+- id: oauth2
+  conforms: true
+  evidence: developer portal documents OAuth member-consent authorization for the API catalog
+- id: mutual-tls
+  conforms: true
+  evidence: gateway connectivity requires mTLS with client-certificate whitelisting; Gateway Connectivity API provided to test it
+- id: consumer-permissioned-open-banking
+  conforms: true
+  evidence: consumer-permissioned data-access catalog (accounts, holders, statements, transactions, customer details) gated by member consent and a signed Data Access Agreement
+- id: rfc9116-security-txt
+  conforms: true
+  evidence: /.well-known/security.txt published at www.navyfederal.org with disclosure Contact
+- id: oidc
+  conforms: false
+  evidence: no /.well-known/openid-configuration discovery document found
+- id: fapi
+  conforms: false
+  evidence: no published FAPI conformance claim or spec available
+- id: fdx
+  conforms: false
+  evidence: consumer-permissioned model present but no explicit FDX certification published

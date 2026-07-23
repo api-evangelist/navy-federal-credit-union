@@ -156,6 +156,10 @@ apis:
   - type: APIReference
     url: https://developer.navyfederal.org/open-banking-api-catalog.html
 common:
+- type: VulnerabilityDisclosure
+  url: security/navy-federal-credit-union-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/navy-federal-credit-union-domain-security.yml
 - type: Website
   url: https://www.navyfederal.org/
 - type: DeveloperPortal
@@ -168,10 +172,31 @@ common:
   url: https://developer.navyfederal.org/support.html
 - type: TermsOfService
   url: https://developer.navyfederal.org/terms-and-conditions.html
+- type: PrivacyPolicy
+  url: https://www.navyfederal.org/policy/privacy.html
+- type: APIReference
+  url: https://developer.navyfederal.org/open-banking-api-catalog.html
+- type: Support
+  name: Developer FAQs
+  url: https://developer.navyfederal.org/support/faqs.html
+- type: Login
+  url: https://developer.navyfederal.org/login.html
 - type: LinkedIn
   url: https://www.linkedin.com/company/navy-federal-credit-union
 - type: Blog
   url: https://www.navyfederal.org/makingcents.html
+- type: LLMsTxt
+  url: llms/navy-federal-credit-union-llms.txt
+- type: WellKnown
+  url: well-known/navy-federal-credit-union-well-known.yml
+- type: SecurityTxt
+  url: well-known/navy-federal-credit-union-security.txt
+- type: Security
+  url: https://navyfederal.responsibledisclosure.com/hc/en-us
+- type: Authentication
+  url: authentication/navy-federal-credit-union-authentication.yml
+- type: Conformance
+  url: conformance/navy-federal-credit-union-conformance.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
