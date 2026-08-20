@@ -34,6 +34,15 @@ deliveryModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
+- Financial-Services
+- Banking
+- United States
+- Credit Union
+- Open Finance
+- Open Banking
+- Data Aggregation
+- Payments
+tags_raw:
 - Financial Services
 - Banking
 - United States
@@ -55,6 +64,9 @@ apis:
     a signed Data Access Agreement, OAuth member consent, and mTLS.
   humanURL: https://developer.navyfederal.org/open-banking-api-catalog.html
   tags:
+  - Account
+  - Balances
+  tags_raw:
   - Accounts
   - Balances
   properties:
@@ -70,6 +82,9 @@ apis:
     API Catalog.
   humanURL: https://developer.navyfederal.org/open-banking-api-catalog.html
   tags:
+  - Account
+  - Identity
+  tags_raw:
   - Accounts
   - Identity
   properties:
@@ -85,6 +100,9 @@ apis:
     Banking API Catalog.
   humanURL: https://developer.navyfederal.org/open-banking-api-catalog.html
   tags:
+  - Account
+  - Statements
+  tags_raw:
   - Accounts
   - Statements
   properties:
@@ -100,6 +118,9 @@ apis:
     consumer-permissioned Open Banking API Catalog.
   humanURL: https://developer.navyfederal.org/open-banking-api-catalog.html
   tags:
+  - Account
+  - Transaction
+  tags_raw:
   - Accounts
   - Transactions
   properties:
@@ -115,6 +136,8 @@ apis:
     Catalog.
   humanURL: https://developer.navyfederal.org/open-banking-api-catalog.html
   tags:
+  - Authentication
+  tags_raw:
   - OAuth
   - Authentication
   properties:
@@ -129,6 +152,9 @@ apis:
     Federal's consumer-permissioned Open Banking API Catalog.
   humanURL: https://developer.navyfederal.org/open-banking-api-catalog.html
   tags:
+  - Account
+  - Customers
+  tags_raw:
   - Accounts
   - Customers
   properties:
