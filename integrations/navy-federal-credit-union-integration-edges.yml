@@ -1,5 +1,5 @@
 generated: '2026-10-12'
-method: none
+method: searched
 source:
 - https://zapier.com/apps/navy-federal-credit-union/integrations
 - https://n8n.io/integrations/navy-federal-credit-union/
@@ -9,8 +9,33 @@ checked:
 - https://composio.dev/toolkits/navy-federal-credit-union
 - https://monid.ai/tools/navy-federal-credit-union
 - https://n8n.io/integrations/navy-federal-credit-union/
+- https://registry.financialdataexchange.org/
 - https://zapier.com/apps/navy-federal-credit-union/integrations
 summary: null
 marketplace_apps: []
-edges: []
+edges:
+- partner_name: FDX (Financial Data Exchange)
+  partner: fdx
+  type: contract
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://registry.financialdataexchange.org/
+  contract_reference:
+    register: FDX Registry
+    standard: FDX API
+    spec_file: null
+    register_api: https://registry.financialdataexchange.org/fdxregistryapi/organizations/search/listingTags
+    role: data-provider
+    member_type: MEMBER
+    registered_name: Navy Federal Credit Union
+    register_id: 138
+    registered_website: https://www.navyfederal.org
+    country: United States
+    fdx_version: null
+    matched_by: domain:navyfederal.org
+    detected_by: sweep-fdx.py
+    detected: '2026-10-14'
+  detected_by: sweep-fdx.py
+  first_seen: '2026-10-14'
 templates: []
