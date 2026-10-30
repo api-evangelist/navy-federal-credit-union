@@ -1,4 +1,4 @@
-# Navy Federal Credit Union (navy-federal-credit-union)
+# Navy Federal Credit Union
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,100 +64,100 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Navy Federal Credit Union is a federally chartered, member-owned credit union headquartered in Vienna, Virginia — the largest credit union in the world by assets and membership, serving 14M+ members across the armed forces, DoD, veterans, and their families. It is a not-for-profit financial cooperative regulated by the National Credit Union Administration (NCUA).
+Navy Federal Credit Union is a federally chartered credit union headquartered in Vienna, Virginia, and the largest credit union in the world by both assets and membership, serving more than 14 million members across the armed forces, Department of Defense, veterans, and their families. As a not-for-profit, member-owned financial cooperative regulated by the National Credit Union Administration (NCUA), it offers deposit accounts, credit cards, auto and mortgage lending, and investment services. On the open-finance front, Navy Federal operates a genuine first-party developer program — the Navy Federal API Exchange at developer.navyfederal.org — that publishes a consumer- permissioned, open-banking-style API catalog of eight data-access products (account details, holders, statements, transactions, customer accounts, customer details, plus OAuth/API-management and an mTLS gateway-connectivity test). Access is partner-gated behind registration and a signed Data Access Agreement, secured with OAuth member consent and mutual-TLS whitelisting; no OpenAPI/Swagger is publicly downloadable pre-login. Navy Federal also exposes member-permissioned data through aggregators (Plaid, Envestnet | Yodlee via a 2021 data access agreement, Flinks) rather than solely direct first-party integration.
 
-On the open-finance front, Navy Federal runs a genuine first-party developer program — the **Navy Federal API Exchange** at [developer.navyfederal.org](https://developer.navyfederal.org/) — publishing a consumer-permissioned, open-banking-style API catalog. Access is partner-gated behind registration and a signed **Data Access Agreement**, secured with OAuth member consent and mutual-TLS whitelisting. No OpenAPI/Swagger is publicly downloadable pre-login. Members can also share permissioned data through aggregators (Plaid, Envestnet | Yodlee, Flinks).
+**Areas:** Financial Services · Banking · United States · Credit Union · Open Finance · Open Banking · Payments
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/navy-federal-credit-union/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/navy-federal-credit-union/refs/heads/main/apis.yml)
+## Navy Federal Credit Union on APIs.io
 
-## Tags
+Everything profiled for Navy Federal Credit Union is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/navy-federal-credit-union/](https://apis.io/providers/navy-federal-credit-union/)** — or go straight to one of the APIs or properties below.
 
-- Financial Services
-- Banking
-- United States
-- Credit Union
-- Open Finance
-- Open Banking
-- Data Aggregation
-- Payments
+### APIs (8)
 
-## Timestamps
+- [Account Details API](https://apis.io/apis/navy-federal-credit-union/account-details/) — Details and summary information for member accounts, including name, status, activity dates, balances, and more. Part of Navy Federal's consumer-…
+- [Account Holders API](https://apis.io/apis/navy-federal-credit-union/account-holders/) — Information on account ownership and member relationships for consented member accounts. Part of Navy Federal's consumer-permissioned Open Banking API Catalog.
+- [Account Statements API](https://apis.io/apis/navy-federal-credit-union/account-statements/) — Statements for accounts over a given period, including statement names and images with details. Part of Navy Federal's consumer-permissioned Open Banking…
+- [Account Transactions API](https://apis.io/apis/navy-federal-credit-union/account-transactions/) — Transactions for accounts over a given period, including amounts, description, running balance, status, and more. Part of Navy Federal's…
+- [API Management API](https://apis.io/apis/navy-federal-credit-union/api-management/) — Client registration and OAuth authentication management used to onboard third parties and obtain member consent tokens for the Open Banking API Catalog.
+- [Customer Accounts API](https://apis.io/apis/navy-federal-credit-union/customer-accounts/) — Listing of consented member accounts with basic details. Part of Navy Federal's consumer-permissioned Open Banking API Catalog.
+- [Customer Details API](https://apis.io/apis/navy-federal-credit-union/customer-details/) — Member information independent of accounts, including name, address, date of birth, IDs, and other personal information. Part of Navy Federal's…
+- [Gateway Connectivity API](https://apis.io/apis/navy-federal-credit-union/gateway-connectivity/) — Connection test to the API platform providing a basic message response, used to prove out a working request over mTLS with whitelisting. Part of Navy…
 
-- **Created:** 2026-07-23
-- **Modified:** 2026-07-23
+### Published properties
 
-## APIs
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-The Navy Federal API Exchange Open Banking API Catalog lists eight consumer-permissioned data-access products. Detailed per-API reference pages and specifications are login-gated behind registration and a signed Data Access Agreement; each entry below points to the publicly viewable catalog.
+#### Security (3)
 
-### Account Details API
+Authentication, trust centre, and vulnerability disclosure.
 
-Details and summary information for member accounts, including name, status, activity dates, balances, and more.
+- [Navy Federal Credit Union Authentication](https://apis.io/security/navy-federal-credit-union/navy-federal-credit-union-authentication/)
+- [Navy Federal Credit Union Domain Security](https://apis.io/security/navy-federal-credit-union/navy-federal-credit-union-domain-security/)
+- [Navy Federal Credit Union Vulnerability Disclosure](https://apis.io/security/navy-federal-credit-union/navy-federal-credit-union-vulnerability-disclosure/)
 
-- **Human URL:** [https://developer.navyfederal.org/open-banking-api-catalog.html](https://developer.navyfederal.org/open-banking-api-catalog.html)
+## Where to find this API
 
-### Account Holders API
-
-Information on account ownership and member relationships for consented member accounts.
-
-- **Human URL:** [https://developer.navyfederal.org/open-banking-api-catalog.html](https://developer.navyfederal.org/open-banking-api-catalog.html)
-
-### Account Statements API
-
-Statements for accounts over a given period, including statement names and images with details.
-
-- **Human URL:** [https://developer.navyfederal.org/open-banking-api-catalog.html](https://developer.navyfederal.org/open-banking-api-catalog.html)
-
-### Account Transactions API
-
-Transactions for accounts over a given period, including amounts, description, running balance, status, and more.
-
-- **Human URL:** [https://developer.navyfederal.org/open-banking-api-catalog.html](https://developer.navyfederal.org/open-banking-api-catalog.html)
-
-### API Management API
-
-Client registration and OAuth authentication management used to onboard third parties and obtain member consent tokens.
-
-- **Human URL:** [https://developer.navyfederal.org/open-banking-api-catalog.html](https://developer.navyfederal.org/open-banking-api-catalog.html)
-
-### Customer Accounts API
-
-Listing of consented member accounts with basic details.
-
-- **Human URL:** [https://developer.navyfederal.org/open-banking-api-catalog.html](https://developer.navyfederal.org/open-banking-api-catalog.html)
-
-### Customer Details API
-
-Member information independent of accounts, including name, address, date of birth, IDs, and other personal information.
-
-- **Human URL:** [https://developer.navyfederal.org/open-banking-api-catalog.html](https://developer.navyfederal.org/open-banking-api-catalog.html)
-
-### Gateway Connectivity API
-
-Connection test to the API platform providing a basic message response, used to prove out a working request over mTLS with whitelisting.
-
-- **Human URL:** [https://developer.navyfederal.org/open-banking-api-catalog.html](https://developer.navyfederal.org/open-banking-api-catalog.html)
-
-## Open Finance Posture
-
-- **First-party developer portal:** Yes — Navy Federal API Exchange (`developer.navyfederal.org`, HTTP 200), an "Open Banking API Catalog" of consumer-permissioned data-access APIs.
-- **Auth model:** OAuth member consent + mutual-TLS (mTLS) with IP whitelisting; onboarding requires a signed Data Access Agreement.
-- **Downloadable specs:** None public — API reference and specifications are login-gated.
-- **FDX / CFPB 1033:** Neither FDX membership nor a 1033 posture is explicitly named on the public portal; the catalog is a standardized, tokenized, consumer-permissioned data-sharing program in the open-banking spirit.
-- **Aggregator access:** Members can share data via Plaid, Envestnet | Yodlee (2021 Data Access Agreement), and Flinks.
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.navyfederal.org/)
-- [Developer Portal](https://developer.navyfederal.org/)
 - [Documentation](https://developer.navyfederal.org/document-library.html)
-- [Sign Up](https://developer.navyfederal.org/register.html)
+- [API reference](https://developer.navyfederal.org/open-banking-api-catalog.html)
+- [Sign up](https://developer.navyfederal.org/register.html)
 - [Support](https://developer.navyfederal.org/support.html)
-- [Terms of Service](https://developer.navyfederal.org/terms-and-conditions.html)
-- [LinkedIn](https://www.linkedin.com/company/navy-federal-credit-union)
 - [Blog](https://www.navyfederal.org/makingcents.html)
+- [Security](https://navyfederal.responsibledisclosure.com/hc/en-us)
+- [Terms of service](https://developer.navyfederal.org/terms-and-conditions.html)
+- [Privacy policy](https://www.navyfederal.org/policy/privacy.html)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 28.5** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 69.6 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 45.2 |
+| Access clarity | 34.2 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 34.6** — Banking & Open Finance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/navy-federal-credit-union/](https://apis.io/providers/navy-federal-credit-union/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Navy Federal Credit Union: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/navy-federal-credit-union/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
